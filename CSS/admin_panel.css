@@ -1,0 +1,378 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to right , rgb(226, 139, 231),rgb(151, 222, 236));
+    /* background: url(../Images/bgimg.jpg);
+    background-position: center;
+    background-size: cover;
+} */
+}
+
+
+
+.head{
+    height: 10%;
+    background-color: white;
+    display: flex;
+    margin: 10px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+}
+.head h1{
+   
+    text-transform: uppercase;
+    margin: auto;
+    color: var(--primary-color);
+    letter-spacing: 1px;
+}
+
+/* Main*/
+
+.main{
+    display:grid;
+    grid-template-columns:20% 80%;
+  }
+/* Side nav */
+.sidenav{
+    display: inline-block;
+    height: 600px;
+    width: 300px;
+    /* background-color: white; */
+    background:#fff5;
+    backdrop-filter: blur(7px);
+    margin: 10px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    border-radius: 5px;
+    position: relative;
+}
+.sidenav .logout{
+    position:absolute;
+    bottom: 20px;
+    width:100%;
+    text-align: center;
+}
+.sidenav .logout a{
+    text-decoration: none;
+    font-weight: bold;
+    color: tomato;
+    letter-spacing: 1px;
+}
+.sidenav ul{
+    height: 100%;
+    width: 100%;
+}
+.sidenav ul li{
+    margin: 30px auto;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+    
+}
+.sidenav ul li:hover{
+    transition: 0.4s;
+    background-color: var(--primary-color);
+}
+
+/* first*/
+
+.first{
+    display: inline-block;
+    height: 600px;
+    width: 80%;
+    background-color: #fff5;
+    margin: 10px;
+    margin-left: 20px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    border-radius: 5px;
+    backdrop-filter: blur(7px);
+    overflow: auto;
+   
+}
+.first form{
+    height: 100%;
+    width: 28rem;
+    display: flex;
+    flex-direction: column;
+    margin-left: 250px;
+}
+.first h2{
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 20px;
+    background-color: #fff4;
+    position: sticky;
+    top: 0;
+}
+.first form input{
+    width: 80%;
+    height: 8%;
+    margin: 20px auto;
+    text-align: center;
+    border: none;
+    outline: none;
+    /* background-color: rgb(199, 195, 195); */
+    background-color: white;
+    color: var(--primary-color);
+    
+}
+.first form input[type="file"]{
+    border: none;
+    background-color: black;
+}
+.first form input[type="submit"]{
+    width: 50%;
+    background:linear-gradient(to right,rgb(75, 234, 144),rgb(190, 220, 255)) ;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+.first form input[type="submit"]:hover{
+    transition: 0.4s;
+    background:linear-gradient(to right,rgb(190, 220, 255),rgb(75, 234, 144)) ;
+    
+}
+
+/* Second */
+.second{
+    display: inline-block;
+    height: 600px;
+    width: 80%;
+    /* background-color: white; */
+    background-color: #fff5;
+    backdrop-filter: blur(7px);
+    margin: 10px;
+    margin-left: 20px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    border-radius: 5px;
+    overflow: auto;
+}
+.second .main{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 10px;
+    margin-top: 20px;
+}
+.second  h2{
+
+    text-transform: uppercase;
+    text-align: center;
+    padding: 20px;
+    background-color: #fff4;
+    position: sticky;
+    top: 0;
+    
+}
+.second .main img{
+    height: 100px;
+    width: 100px;
+}
+.second .main table,th,td{
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 5px;
+}
+
+.second .main table {
+    background-color: #fff6;
+}
+.second .main table button {
+    background-color:var(--primary-color);
+    color:white;
+    height: 40px;
+    width: 100px;
+    cursor: pointer;
+    border: none;
+}
+.second .main table thead tr{
+    background:linear-gradient(to right,rgb(240, 144, 238),rgb(130, 221, 151));
+    font-size: 20px;
+}
+.second .main table tbody tr{
+    color: white;
+    background-color: rgb(100, 210, 130);
+}
+
+/* Third */
+.third{
+    display: inline-block;
+    height: 600px;
+    width: 80%;
+    /* background-color: white; */
+    background-color: #fff5;
+    backdrop-filter: blur(7px);
+    margin: 10px;
+    margin-left: 20px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    border-radius: 5px;
+    overflow: auto;
+}
+.third .main{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 10px;
+    margin-top: 20px;
+}
+.third .main img{
+    height: 100px;
+    width: 100px;
+}
+
+.third .main table,th,td{
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 5px;
+}
+
+.third  h2{
+
+    text-transform: uppercase;
+    text-align: center;
+    padding: 20px;
+    background-color: #fff4;
+    position: sticky;
+    top: 0;
+    
+}
+.third .main table,th,td{
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 5px;
+}
+
+.third .main table {
+    background-color: #fff6;
+}
+
+.third .main table thead tr{
+    background:linear-gradient(to right,rgb(240, 144, 238),rgb(130, 221, 151));
+    font-size: 20px;
+}
+.third .main table tbody tr{
+    color: white;
+    background-color: rgb(100, 210, 130);
+}
+
+/* Fourth */
+
+.fourth{
+    display: inline-block;
+    height: 600px;
+    width: 80%;
+    /* background-color: white; */
+    background-color: #fff5;
+    backdrop-filter: blur(7px);
+    margin: 10px;
+    margin-left: 20px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    border-radius: 5px;
+    overflow: auto;
+}
+.fourth .main{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 10px;
+    margin-top: 20px;
+}
+.fourth  h2{
+
+    text-transform: uppercase;
+    text-align: center;
+    padding: 20px;
+    background-color: #fff4;
+    position: sticky;
+    top: 0;
+    
+}
+.fourth .main img{
+    height: 100px;
+    width: 100px;
+}
+.fourth .main table,th,td{
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 5px;
+}
+
+.fourth .main table {
+    background-color: #fff6;
+}
+.fourth .main table button {
+    background-color:var(--primary-color);
+    color:white;
+    height: 40px;
+    width: 100px;
+    cursor: pointer;
+    border: none;
+}
+.fourth .main table thead tr{
+    background:linear-gradient(to right,rgb(240, 144, 238),rgb(130, 221, 151));
+    font-size: 20px;
+}
+.fourth .main table tbody tr{
+    color: white;
+    background-color: rgb(100, 210, 130);
+}
+
+/* Main Contents */
+.second{
+    display: none;
+}
+.third{
+    display: none;
+}
+.fourth{
+    display: none;
+}
+
+/* cart design */
+.firstCart h2{
+    color: rgb(201, 47, 85);
+}
+.firstCart .cart{
+    margin: 30px auto;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 30px;
+    width: 80%;
+}
+.firstCart .cart img{
+
+    height: 100px;
+    width: 100px;
+}
+.firstCart .cart h3{
+
+   color: black;
+   text-transform: uppercase;
+   margin: 10px;
+}
+.firstCart .cart a button{
+
+    margin:20px 20px 20px 0;
+    width:120px;
+    height: 40px;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: 0.4s;
+ }
+ .firstCart .cart a button:hover{
+    transform: scale(1.1);
+}
+.firstCart .cart a #remove{
+
+ 
+    background-color: red;
+ 
+ }
